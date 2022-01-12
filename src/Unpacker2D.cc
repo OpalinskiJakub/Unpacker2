@@ -449,7 +449,7 @@ void Unpacker2D::DistributeEventsSingleStep()
               else
               {
                 // regular ending
-                file->seekg(file->tellg() - 4);
+                file->seekg(static_cast<unsigned int>(file->tellg()) - 4);
                 queueSize--;
                 break;
               }
