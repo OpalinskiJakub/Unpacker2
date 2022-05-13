@@ -19,7 +19,7 @@ endif()
 # MINOR version when you add functionality in a backwards-compatible manner, and
 # PATCH version when you make backwards-compatible bug fixes.
 
-project(Unpacker2 VERSION 3.0.0
+project(Unpacker2 VERSION 4.0.0
                   LANGUAGES CXX)
 set(PROJECT_DESCRIPTION "Unpacker2 module")
 
@@ -156,7 +156,7 @@ ROOT_GENERATE_DICTIONARY(${DICTIONARY_NAME} ${HEADERS_WITH_DICTIONARY_REQUIRED}
 ## End of configuration of ROOT
 
 # Set all sources
-set(SOURCES src/Unpacker2.cc src/EventIII.cc src/TDCChannel.cc ${DICTIONARY_NAME}.cxx)
+set(SOURCES src/Unpacker2.cc src/Unpacker2D.cc src/EventIII.cc src/TDCChannel.cc ${DICTIONARY_NAME}.cxx)
 
 add_library(Unpacker2 SHARED ${SOURCES})
 #TODO: maybe change namespace to JPetTomography?
@@ -196,7 +196,7 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/Unpacker2Config.cmake"
               "${CMAKE_CURRENT_BINARY_DIR}/Unpacker2ConfigVersion.cmake"
         DESTINATION ${CMAKE_INSTALL_PREFIX}/cmake
         )
-        
+
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/libUnpacker2_rdict.pcm"
               "${CMAKE_CURRENT_BINARY_DIR}/libUnpacker2.rootmap"
         DESTINATION ${CMAKE_INSTALL_LIBDIR}
@@ -204,9 +204,9 @@ install(FILES "${CMAKE_CURRENT_BINARY_DIR}/libUnpacker2_rdict.pcm"
 
 install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/thisunpacker.sh"
         DESTINATION ${CMAKE_INSTALL_BINDIR})
-      
-        configure_file("${PROJECT_BINARY_DIR}/Unpacker2Config.cmake" "${PROJECT_BINARY_DIR}/cmake/Unpacker2Config.cmake" COPYONLY) 
-        configure_file("${PROJECT_BINARY_DIR}/Unpacker2ConfigVersion.cmake" "${PROJECT_BINARY_DIR}/cmake/Unpacker2ConfigVersion.cmake" COPYONLY) 
+
+        configure_file("${PROJECT_BINARY_DIR}/Unpacker2Config.cmake" "${PROJECT_BINARY_DIR}/cmake/Unpacker2Config.cmake" COPYONLY)
+        configure_file("${PROJECT_BINARY_DIR}/Unpacker2ConfigVersion.cmake" "${PROJECT_BINARY_DIR}/cmake/Unpacker2ConfigVersion.cmake" COPYONLY)
 
 	configure_file("${CMAKE_CURRENT_SOURCE_DIR}/thisunpacker.sh" "${PROJECT_BINARY_DIR}/bin/thisunpacker.sh" COPYONLY)
 
@@ -215,7 +215,7 @@ add_custom_target(
   copy_target
   COMMAND ${CMAKE_COMMAND} -E copy "${PROJECT_BINARY_DIR}/Unpacker2Targets.cmake" "${PROJECT_BINARY_DIR}/cmake/Unpacker2Targets.cmake"
   DEPENDS "${PROJECT_BINARY_DIR}/Unpacker2Targets.cmake")
-add_dependencies(Unpacker2 copy_target) 
+add_dependencies(Unpacker2 copy_target)
 
 #unit tests
 option(PACKAGE_TESTS "Build the tests" ON)
