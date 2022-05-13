@@ -19,7 +19,7 @@ endif()
 # MINOR version when you add functionality in a backwards-compatible manner, and
 # PATCH version when you make backwards-compatible bug fixes.
 
-project(Unpacker2 VERSION 3.0.0
+project(Unpacker2 VERSION 4.0.0
                   LANGUAGES CXX)
 set(PROJECT_DESCRIPTION "Unpacker2 module")
 
