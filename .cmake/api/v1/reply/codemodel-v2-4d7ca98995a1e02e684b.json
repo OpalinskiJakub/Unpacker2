@@ -1,0 +1,107 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-148b5f630446a834326f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Unpacker2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "G__Unpacker2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-G__Unpacker2-Debug-1c09be6ca8181c415f18.json",
+					"name" : "G__Unpacker2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Unpacker2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Unpacker2-Debug-791980d8b0b867f93ae2.json",
+					"name" : "Unpacker2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Unpacker2Test::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-Unpacker2Test-Debug-fb4074a2055a12953f19.json",
+					"name" : "Unpacker2Test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "copy_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-copy_target-Debug-3dff46accfb2019fcde2.json",
+					"name" : "copy_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jakub/CLionProjects/Unpacker2",
+		"source" : "/home/jakub/CLionProjects/Unpacker2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
