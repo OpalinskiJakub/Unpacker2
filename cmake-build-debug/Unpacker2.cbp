@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Unpacker2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\;CMake Files\..\..\Opt\;CMake Files\..\..\Opt\ROOT\;CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\;CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\;CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\;CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Unpacker2">
+				<Option output="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Unpacker2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jakub/CLionProjects/Unpacker2/include"/>
+					<Add directory="/home/jakub/Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Unpacker2"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Unpacker2/fast">
+				<Option output="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Unpacker2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jakub/CLionProjects/Unpacker2/include"/>
+					<Add directory="/home/jakub/Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Unpacker2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/EventIII.cc">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/TDCChannel.cc">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/Unpacker2.cc">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/Unpacker2D.cc">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/main.cpp">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.74.0\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.74.0\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/ROOTConfig-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/ROOTConfig-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/ROOTConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/ROOTConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/RootMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/../../Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/cmake/modules/FindVdt.cmake">
+			<Option virtualFolder="CMake Files\..\..\Opt\ROOT\root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4\root\cmake\modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
