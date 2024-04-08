@@ -2,6 +2,8 @@
 
 int main() {
 
+  std::cout << "dziala";
+
   Unpacker2 unpacker;
 
 
