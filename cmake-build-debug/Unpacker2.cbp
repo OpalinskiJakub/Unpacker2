@@ -17,6 +17,16 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="G__Unpacker2">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 G__Unpacker2"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="Unpacker2">
 				<Option output="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Unpacker2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
@@ -24,7 +34,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DVECCORE_ENABLE_VC"/>
 					<Add directory="/home/jakub/CLionProjects/Unpacker2/include"/>
+					<Add directory="/home/jakub/CLionProjects/Unpacker2/ROOT_BUG"/>
 					<Add directory="/home/jakub/Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/include"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
@@ -48,7 +61,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DVECCORE_ENABLE_VC"/>
 					<Add directory="/home/jakub/CLionProjects/Unpacker2/include"/>
+					<Add directory="/home/jakub/CLionProjects/Unpacker2/ROOT_BUG"/>
 					<Add directory="/home/jakub/Opt/ROOT/root_v6.30.04.Linux-ubuntu22.04-x86_64-gcc11.4/root/include"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
@@ -60,6 +76,26 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Unpacker2/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
 					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -85,7 +121,53 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/G__Unpacker2.cxx">
+			<Option target="Unpacker2"/>
+		</Unit>
+		<Unit filename="/home/jakub/CLionProjects/Unpacker2/cmake-build-debug/G__Unpacker2.cxx.rule">
+			<Option target="Unpacker2"/>
+		</Unit>
 		<Unit filename="/home/jakub/CLionProjects/Unpacker2/src/EventIII.cc">
 			<Option target="Unpacker2"/>
 		</Unit>

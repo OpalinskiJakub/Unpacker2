@@ -6,7 +6,8 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d7726b44119cf4f8d64e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -15,7 +16,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +32,8 @@
 					"name" : "Unpacker2",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +41,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "G__Unpacker2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-G__Unpacker2-Debug-13dbb71d0ea57e7892e0.json",
+					"name" : "G__Unpacker2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Unpacker2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Unpacker2-Debug-d55759dfa7232e93df2e.json",
+					"jsonFile" : "target-Unpacker2-Debug-3c42b5537ed8bff641a6.json",
 					"name" : "Unpacker2",
 					"projectIndex" : 0
 				}

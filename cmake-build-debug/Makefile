@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/jakub/CLionProjects/Unpacker2/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cpack --config ./CPackSourceConfig.cmake /home/jakub/CLionProjects/Unpacker2/cmake-build-debug/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -84,6 +104,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/snap/clion/265/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,6 +182,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named G__Unpacker2
+
+# Build rule for target.
+G__Unpacker2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 G__Unpacker2
+.PHONY : G__Unpacker2
+
+# fast build rule for target.
+G__Unpacker2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/G__Unpacker2.dir/build.make CMakeFiles/G__Unpacker2.dir/build
+.PHONY : G__Unpacker2/fast
+
+#=============================================================================
 # Target rules for targets named Unpacker2
 
 # Build rule for target.
@@ -128,6 +206,30 @@ Unpacker2: cmake_check_build_system
 Unpacker2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Unpacker2.dir/build.make CMakeFiles/Unpacker2.dir/build
 .PHONY : Unpacker2/fast
+
+G__Unpacker2.o: G__Unpacker2.cxx.o
+.PHONY : G__Unpacker2.o
+
+# target to build an object file
+G__Unpacker2.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Unpacker2.dir/build.make CMakeFiles/Unpacker2.dir/G__Unpacker2.cxx.o
+.PHONY : G__Unpacker2.cxx.o
+
+G__Unpacker2.i: G__Unpacker2.cxx.i
+.PHONY : G__Unpacker2.i
+
+# target to preprocess a source file
+G__Unpacker2.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Unpacker2.dir/build.make CMakeFiles/Unpacker2.dir/G__Unpacker2.cxx.i
+.PHONY : G__Unpacker2.cxx.i
+
+G__Unpacker2.s: G__Unpacker2.cxx.s
+.PHONY : G__Unpacker2.s
+
+# target to generate assembly for a file
+G__Unpacker2.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Unpacker2.dir/build.make CMakeFiles/Unpacker2.dir/G__Unpacker2.cxx.s
+.PHONY : G__Unpacker2.cxx.s
 
 src/EventIII.o: src/EventIII.cc.o
 .PHONY : src/EventIII.o
@@ -256,8 +358,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... G__Unpacker2"
 	@echo "... Unpacker2"
+	@echo "... G__Unpacker2.o"
+	@echo "... G__Unpacker2.i"
+	@echo "... G__Unpacker2.s"
 	@echo "... src/EventIII.o"
 	@echo "... src/EventIII.i"
 	@echo "... src/EventIII.s"

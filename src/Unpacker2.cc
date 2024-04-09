@@ -202,6 +202,8 @@ void Unpacker2::DistributeEventsSingleStep()
 {
 
   string fileName = fInputFilePath + fInputFile;
+std:
+  cout << fileName << std::endl;
   ifstream* file = new ifstream(fileName.c_str());
 
   if (file->is_open())
